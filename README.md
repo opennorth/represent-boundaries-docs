@@ -15,6 +15,8 @@ Besides the following files, all files should be in sync with other *.poplus.org
 * `index.html`
 * `README.md`
 
+Build and preview the site:
+
 ```
 sass --update assets/sass:css
 jekyll serve --watch
