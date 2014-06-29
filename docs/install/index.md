@@ -37,7 +37,7 @@ This guide assumes you are using Homebrew as your package manager. If you use Ma
 
         brew info postgresql
 
-### Install Represent Boundaries
+## Install Represent Boundaries
 
 1. Create a PostGIS database:
 
