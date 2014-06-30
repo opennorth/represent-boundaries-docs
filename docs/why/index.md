@@ -3,16 +3,14 @@ layout: inner-page
 title: When to use Represent Boundaries
 ---
 
-Represent Boundaries has many features in common with [MapIt](http://mapit.poplus.org/), another Poplus component.
-
-If you're having trouble choosing between Represent Boundaries and MapIt, here are Represent Boundaries' advantages:
+Represent Boundaries has many features in common with [MapIt](http://mapit.poplus.org/), another Poplus component. If you're having trouble choosing between Represent Boundaries and MapIt, here are Represent Boundaries' advantages:
 
 * Represent Boundaries' <a href="{{ site.baseurl }}/docs/import/">definition files</a> give you fine-grained control over how data is loaded into the API, in particular how boundaries are named and identified, without having to write [custom import scripts](https://github.com/mysociety/mapit/tree/master/mapit/management/commands) like in MapIt. If you often need to correct or transform the data in shapefiles, Represent Boundaries is the better choice.
-* Represent Boundaries uses **boundary sets** to organize boundaries and to publish metadata, like information on the data's provenance. MapIt lacks boundary sets, so it can't publish metadata for a boundary set. However, it can still organize boundaries, using area types and boundary hierarchies: for example, [all London wards](http://mapit.mysociety.org/areas/LBW) have the type <abbr title="London borough ward">LBW</abbr>.
+* Represent Boundaries uses **boundary sets** to organize boundaries and to publish metadata, like the data's provenance. MapIt lacks boundary sets, so it can't publish metadata for a boundary set. However, it can still organize boundaries, using area types and boundary hierarchies: for example, [all London wards](http://mapit.mysociety.org/areas/LBW) have the type <abbr title="London borough ward">LBW</abbr>.
 * Because MapIt lacks boundary sets, you need to think more carefully about how to organize boundaries. For example, should Scottish and Welsh constituencies be assigned the same generic area type ("constituency"), or should they be assigned unique area types ("Scottish constituency" and "Welsh constituency")? Your choice has an impact on how your users access your data. If you don't want to make these decisions, Represent Boundaries gives you a single, reasonable option.
 * Represent Boundaries has **less code**, making it easier to learn and extend. For example, [Represent Maps](https://github.com/JoshData/represent-maps) by Joshua Tauberer extends Represent Boundaries and helps you create beautiful, colorful maps for your website.
 
-In brief, if you want to make data from shapefiles available via API quickly and easily, Represent Boundaries will get you there with little fuss. However, MapIt has a few unique features:
+If you want to make data from shapefiles available via API quickly and easily, Represent Boundaries will get you there with little fuss. However, MapIt has a few unique features:
 
 * A boundary can be assigned a parent and children to create a hierarchy. (This is separate from querying which boundaries contain others, which both components can do.)
 * Area types can organize boundaries *across* boundary sets to produce, for example, a list of all wards in all cities. Represent Boundaries would list wards one city at a time.
