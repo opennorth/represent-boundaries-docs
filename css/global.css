@@ -1069,3 +1069,6 @@ a.contact-us-footer-link {
 
 [class*='button--'] + [class*='button--'] {
   margin-left: 1.5em; }
+
+pre code {
+  white-space: pre; }

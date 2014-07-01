@@ -13,4 +13,6 @@ If you **update a shapefile**, remember to change the `last_updated` field in it
 
 If you **correct an error in a definition file**, run the `loadshapefiles` with the `--reload` option to force the re-load of the shapefile. To avoid re-loading all your shapefiles, add a `--data-dir` option pointing to the directory containing the corrected definition file.
 
+    python manage.py loadshapefiles --reload --data-dir data/shapefiles/my-folder
+
 That's everything! If you have questions or issues, [open an issue on GitHub](https://github.com/opennorth/represent-boundaries/issues?state=open) or [contact us](mailto:represent@opennorth.ca).
