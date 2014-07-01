@@ -51,6 +51,7 @@ This guide assumes you are using Homebrew as your package manager. If you use Ma
 1. Start a new Django project. Skip this step if you are integrating Represent Boundaries into an existing Django project.
 
         django-admin.py startproject my_project
+        cd my_project
 
 1. In `my_project/settings.py`, [configure the default database](https://docs.djangoproject.com/en/dev/ref/contrib/gis/tutorial/#configure-settings-py) to connect to the PostGIS database you created above.
 

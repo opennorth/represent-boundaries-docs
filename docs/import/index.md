@@ -20,13 +20,18 @@ boundaries.register('Federal electoral districts',
     encoding='iso-8859-1',
     last_updated=date(2011, 11, 28),
     name_func=boundaries.clean_attr('FEDENAME'),
-    slug_func=boundaries.attr('FEDUID'),
 )
 ```
 
 The `loadshapefiles` command looks for definition files, ending in `definition.py` or `definitions.py`, in `my_project/data/shapefiles`. You can change this path by setting `BOUNDARIES_SHAPEFILES_DIR` in `my_project/settings.py`. Represent Boundaries will walk the directory tree looking for definition files, so you may organize your shapefiles any way you like. [OpenStates.org](https://github.com/sunlightlabs/pentagon/blob/master/shapefiles/definitions.py) puts the shapefiles in subdirectories with a single top-level definition file, while [Represent](https://github.com/opennorth/represent-canada-data) creates a tree with a definition file in each directory containing a shapefile.
 
-If you've been following the example, move the shapefile and definition file for Canada's federal electoral districts into `my_project/data/shapefiles`. You can now run:
+If you've been following the example, move the shapefile and definition file for Canada's federal electoral districts into `data/shapefiles`. You may need to create the directory before moving the files:
+
+```bash
+mkdir -p data/shapefiles
+```
+
+You can now run:
 
     python manage.py loadshapefiles
 

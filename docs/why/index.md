@@ -12,6 +12,7 @@ Represent Boundaries has many features in common with [MapIt](http://mapit.poplu
 
 If you want to make data from shapefiles available via API quickly and easily, Represent Boundaries will get you there with little fuss. However, MapIt has a few unique features:
 
+* If you don't have geospatial data, you can draw boundaries in the admin interface. With Represent Boundaries, you would draw boundaries using GIS programs like [QGIS](http://www.qgis.org/), which create shapefiles for you to import.
 * A boundary can be assigned a parent and children to create a hierarchy. (This is separate from querying which boundaries contain others, which both components can do.)
 * Area types can organize boundaries *across* boundary sets to produce, for example, a list of all wards in all cities. Represent Boundaries would list wards one city at a time.
 * A boundary (United Kingdom) can be assigned multiple names ("Regno Unito") and codes ("GB"). Represent Boundaries limits you to the data in the shapefile.

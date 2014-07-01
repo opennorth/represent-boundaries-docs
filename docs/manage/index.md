@@ -11,7 +11,7 @@ If you **add a shapefile**, <a href="{{ site.baseurl }}/docs/import/">create a d
 
 If you **update a shapefile**, remember to change the `last_updated` field in its definition file. When you run the `loadshapefiles` command, only the updated shapefile will be re-loaded.
 
-If you **correct an error in a definition file**, run the `loadshapefiles` with the `--reload` option to force the re-load of the shapefile. To avoid re-loading all your shapefiles, add a `--data-dir` option pointing to the directory containing the corrected definition file.
+If you **correct an error in a definition file**, run the `loadshapefiles` with the `--reload` option to force the re-load of the shapefile. To avoid re-loading all your shapefiles, add a `--data-dir` option pointing to the directory containing the corrected definition file:
 
     python manage.py loadshapefiles --reload --data-dir data/shapefiles/my-folder
 
