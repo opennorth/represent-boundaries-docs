@@ -17,5 +17,6 @@ Start using Represent Boundaries:
 * <a href="{{ site.baseurl }}/docs/import/">Add data to the API</a>
 * <a href="{{ site.baseurl }}/docs/api/">Use the API</a>
 * <a href="{{ site.baseurl }}/docs/manage/">Update data in the API</a>
+* <a href="{{ site.baseurl }}/docs/reference/">API reference</a>
 
 Not sure whether to use Represent Boundaries or [MapIt](http://mapit.poplus.org/)? <a href="{{ site.baseurl }}/docs/why/">Read our advice</a> to help you decide.
