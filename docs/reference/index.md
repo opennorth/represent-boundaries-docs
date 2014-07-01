@@ -9,8 +9,8 @@ title: API Reference
 
 The API has two top-level endpoints:
 
-* [Boundary sets](#boundary-sets)
-* [Boundaries](#boundaries)
+* [Boundary sets](#boundary-sets): see what groups of boundaries are available
+* [Boundaries](#boundaries): find boundaries by latitude and longitude and draw boundaries
 
 All endpoints output JSON.
 
@@ -51,9 +51,11 @@ A leading `i` makes the search case-insensitive. For example, to find boundaries
 
 For a browsable, HTML version of the JSON response, add a `format=apibrowser` query parameter. Add `pretty=1` to just indent the raw JSON.
 
-### JSONP
+### Cross-domain requests
 
-JSONP is supported for client-side cross-domain requests – just add a `callback` query parameter.
+JSONP is supported – just add a `callback` query parameter.
+
+To enable [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS), add an `Access-Control-Allow-Origin` header by setting `BOUNDARIES_ALLOW_ORIGIN` to `*` in `my_project/settings.py`.
 
 <h2 id="boundary-sets">Boundary sets</h2>
 
@@ -117,7 +119,7 @@ To see responses to these API requests, try them on [http://represent.opennorth.
 
 The default geospatial output format is GeoJSON. Add a `format=kml` or `format=wkt` query parameter to get KML or Well-Known Text.
 
-The `simple_shape` endpoint simplifies the shape, looks fine and loads fast. Represent Boundaries uses a tolerance of `0.0002` by default to simplify the shape. You can change the tolerance by setting `SIMPLE_SHAPE_TOLERANCE` in `my_project/settings.py`. If you change the tolerance, run `loadshapefiles` with the `--reload` switch.
+The `simple_shape` endpoint simplifies the shape, looks fine and loads fast. Represent Boundaries uses a tolerance of `0.0002` by default to simplify the shape. You can change the tolerance by setting `BOUNDARIES_SIMPLE_SHAPE_TOLERANCE` in `my_project/settings.py`. If you change the tolerance, run `loadshapefiles` with the `--reload` switch.
 
 * Get all simple shapes from a boundary set
 
