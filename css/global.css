@@ -1072,3 +1072,36 @@ a.contact-us-footer-link {
 
 pre code {
   white-space: pre; }
+
+.hero {
+  padding: 2em 0;
+  background-image: none; }
+  @media (min-width: 33.75em) {
+    .hero {
+      background-image: none; } }
+  .hero h1 {
+    margin-bottom: 0; }
+
+.hero__component-title {
+  max-width: 100%; }
+  @media (min-width: 50em) {
+    .hero__component-title {
+      max-width: 100%; } }
+
+.column-one-of-two h3 {
+  font-size: 1.125em; }
+.column-one-of-two p {
+  font-size: 0.875em;
+  color: #5d6c7e; }
+  .layout-full-width-inverse .column-one-of-two p {
+    color: #a4b1c2; }
+
+.column-one-of-one {
+  margin-bottom: 2em;
+  vertical-align: top; }
+  @media (min-width: 33.75em) {
+    .column-one-of-one {
+      display: inline-block; } }
+
+.final-call-to-action .button--primary {
+  font-size: 2.375em; }

@@ -1,3 +1,50 @@
 pre code {
   white-space: pre;
 }
+
+.hero {
+  padding: 2em 0;
+  background-image: none;
+
+  @media (min-width: $medium-screen) {
+    background-image: none;
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+}
+
+.hero__component-title {
+  max-width: 100%;
+
+  @media (min-width: $large-screen) {
+    max-width: 100%;
+  }
+}
+
+.column-one-of-two {
+  h3 {
+    font-size: 1.125em;
+  }
+  p {
+    font-size: 0.875em;
+    color: $colour_blue;
+    .layout-full-width-inverse & {
+      color: #a4b1c2;
+    }
+  }
+}
+
+.column-one-of-one {
+  margin-bottom: 2em;
+  vertical-align: top;
+
+  @media (min-width: $medium-screen) {
+    display: inline-block;
+  }
+}
+
+.final-call-to-action .button--primary {
+  font-size: 2.375em;
+}
