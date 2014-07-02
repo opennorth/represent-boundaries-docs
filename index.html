@@ -13,49 +13,58 @@ title: Represent Boundaries
 
 <div class="featuring layout-full-width-left-heading">
     <div class="container">
-        <div class="heading-column">
-            <div class="left-heading">
-                <h2>Benefits</h2>
-            </div>
-        </div>
         <div class="content-column">
             <div class="grid-row">
                 <div class="column-one-of-one">
-                    <h3>Provide relevant information based on your user's location</h3>
+                    <h2>Provide relevant information based on your user's location</h2>
                 </div>
             </div>
             <div class="grid-row">
                 <div class="column-one-of-four">
+                    <img src="assets/img/benefits-a.png" alt="">
                     <h3>Tag your content by area</h3>
-                    <p>In your CMS, match elected officials to their districts, tag news by neighborhood, or organize actions by region.</p>
+                    <p>In your CMS, match elected officials to their districts, organize actions by region or tag news by neighborhood.</p>
                 </div><!--
                 --><div class="column-one-of-four">
+                    <img src="assets/img/benefits-b.png" alt="">
                     <h3>Collect a user's address</h3>
-                    <p>Use any geocoding API like <a href="https://developers.google.com/maps/documentation/geocoding/">Google</a> or <a href="http://msdn.microsoft.com/en-us/library/ff701715.aspx">Bing</a> to transform the address to a latitude and longitude.</p>
+                    <p>Use any geocoding API like <a href="https://developers.google.com/maps/documentation/geocoding/">Google</a> or <a href="http://msdn.microsoft.com/en-us/library/ff701715.aspx">Bing</a> to transform their address to a latitude and longitude.</p>
                 </div><!--
                 --><div class="column-one-of-four">
+                    <img src="assets/img/benefits-c.jpg" alt="">
                     <h3>Match it to an area</h3>
-                    <p>Send the latitude and longitude to the <a href="{{ site.baseurl }}/docs/reference/">Represent Boundaries API</a> to find the matching boundary.</p>
+                    <p>Send the coordinates to the <a href="{{ site.baseurl }}/docs/reference/">Represent Boundaries API</a> to find the geographic area that covers their location.</p>
                 </div><!--
                 --><div class="column-one-of-four">
+                    <img src="assets/img/benefits-d.jpg" alt="" class="img-borderless">
                     <h3>Display relevant content</h3>
-                    <p>Invite supporters to take local actions, show readers stories from their local election race, or build “email your elected official” advocacy campaigns.</p>
+                    <p>Invite supporters to take local actions, show readers stories from a local election race, or build “email your elected official” advocacy campaigns.</p>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
 
+<div class="featuring layout-full-width-left-heading">
+    <div class="container">
+        <div class="content-column">
             <div class="grid-row">
                 <div class="column-one-of-one">
-                    <h3>Organize your people database by geographic area</h3>
+                    <h2>Organize your people database by geographic area</h2>
                 </div>
             </div>
             <div class="grid-row">
-                <div class="column-one-of-two">
+                <div class="column-one-of-three">
                     <h3>Collect people's addresses</h3>
-                    <p>In your CRM, make sure you're collecting people's addresses. Use a geocoding API to transform each address to a latitude and longitude, and use <a href="{{ site.baseurl }}/docs/reference/">Represent Boundaries</a> to match it to a geographic area.</p>
+                    <p>In your CRM, make sure you're collecting people's addresses. Use a geocoding API to transform addresses to latitudes and longitudes.</p>
                 </div><!--
-                --><div class="column-one-of-two">
-                    <h3>Segment people by geographic area</h3>
-                    <p>Match, for example voters, donors or volunteers to electoral districts to better target canvassing, mobilize volunteers, or organize donation drives.</p>
+                --><div class="column-one-of-three">
+                    <h3>Match them with areas</h3>
+                    <p>Use the <a href="{{ site.baseurl }}/docs/reference/">Represent Boundaries API</a> to find the geographic areas that contain those addresses. Update people's profiles with their matching areas.</p>
+                </div><!--
+                --><div class="column-one-of-three">
+                    <h3>Segment people geographically</h3>
+                    <p>Match your volunteers, donors or voters to electoral districts to better mobilize volunteers,organize donation drives or target canvassing.</p>
                 </div>
             </div>
             </div>
@@ -65,31 +74,30 @@ title: Represent Boundaries
 
 <div class="featuring layout-full-width-left-heading">
     <div class="container">
-        <div class="heading-column">
-            <div class="left-heading">
-                <h2>Our Users</h2>
-            </div>
-        </div>
         <div class="content-column">
             <div class="grid-row">
                 <div class="column-one-of-one">
-                    <h3>Used by some of the most popular civic and democratic websites</h3>
+                    <h2>Used by some of the most popular civic and democratic websites</h2>
                 </div>
             </div>
             <div class="grid-row">
                 <div class="column-one-of-four">
+                    <img src="assets/img/govtrack.us.jpg" alt="">
                     <h3><a href="http://www.govtrack.us/">GovTrack.us</a></h3>
                     <p>GovTrack.us helps millions of Americans easily track the activities of the United States Congress.</p>
                 </div><!--
                 --><div class="column-one-of-four">
+                    <img src="assets/img/openstates.org.jpg" alt="">
                     <h3><a href="http://openstates.org/">OpenStates.org</a></h3>
                     <p>Open States by the <a href="http://sunlightfoundation.com/">Sunlight Foundation</a> allows anyone to track lawmaking in their US state.</p>
                 </div><!--
                 --><div class="column-one-of-four">
+                    <img src="assets/img/represent.opennorth.ca.jpg" alt="">
                     <h3><a href="http://represent.opennorth.ca/">Represent</a></h3>
                     <p><a href="http://represent.opennorth.ca/">Open North</a>'s API powers the online email campaigns of Canada's largest nonprofits and unions.</p>
                 </div><!--
                 --><div class="column-one-of-four">
+                    <img src="assets/img/ancfinder.org.jpg" alt="">
                     <h3><a href="http://ancfinder.org/">ANCFinder.org</a></h3>
                     <p>This <a href="http://codefordc.org/">Code for DC</a> app helps increase participation in DC's Advisory Neighborhood Commissions.</p>
                 </div>
@@ -98,8 +106,32 @@ title: Represent Boundaries
     </div>
 </div>
 
+<div class="featuring layout-full-width-left-heading">
+    <div class="container">
+        <div class="content-column">
+            <div class="grid-row">
+                <div class="column-one-of-one">
+                    <h2>Use a public Represent Boundaries API to power your website</h2>
+                    <p>Instead of collecting data and installing Represent Boundaries yourself, you can use one of these public instances.</p>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="column-one-of-two">
+                    <h3>Canada</h3>
+                    <p><a href="http://represent.opennorth.ca/">represent.opennorth.ca</a> by <a href="http://represent.opennorth.ca/">Open North</a> is the most comprehensive source for electoral districts in Canada, including all provinces and nearly 400 municipalities. It's used by some of Canada's largest nonprofits and labor unions. <a href="http://represent.opennorth.ca/demo/">Try out the demo</a> or re-use its <a href="https://github.com/opennorth/represent-canada/">open-source code</a>.</p>
+                </div><!--
+                --><div class="column-one-of-two">
+                    <h3>United States</h3>
+                    <p><a href="http://gis.govtrack.us/map/demo/cd-2012/">gis.govtrack.us</a> has US Congressional Districts and boundary sets from the US Census Bureau and District of Columbia. <a href="http://gis.govtrack.us/map/demo/cd-2012/">Read its documentation</a> or re-use its <a href="https://github.com/JoshData/boundaries_us">open-source code</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="final-call-to-action">
     <div class="container">
-        <a href="/docs/" class="button--primary">Get started with Represent Boundaries</a>
+        <h2>Represent Boundaries is free and open-source</h2>
+        <a href="/docs/" class="button--primary">Get started</a>
     </div>
 </div>
