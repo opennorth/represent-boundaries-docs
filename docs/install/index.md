@@ -3,7 +3,7 @@ layout: inner-page
 title: Installation
 ---
 
-Represent Boundaries is a Django app, which you can deploy on its own or integrate into an existing Django project.
+Represent Boundaries is a Django app, which you can deploy on its own or integrate into an existing Django project. Its source code is [available on GitHub](https://github.com/opennorth/represent-boundaries/).
 
 ## Install dependencies
 
