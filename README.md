@@ -18,6 +18,6 @@ Besides the following files, all files should be in sync with other *.poplus.org
 Build and preview the site:
 
 ```
-sass --update assets/sass:css
+sass --update assets/sass:css --style compressed
 jekyll serve --watch
 ```

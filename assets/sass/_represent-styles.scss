@@ -98,6 +98,11 @@ pre code {
   }
 }
 
-.final-call-to-action .button--primary {
-  font-size: 1.5em;
+.final-call-to-action{
+  .button--primary {
+    font-size: 1.5em;
+  }
+  p {
+    margin-top: 1em;
+  }
 }

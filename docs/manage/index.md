@@ -15,4 +15,6 @@ If you **correct an error in a definition file**, run the `loadshapefiles` with 
 
     python manage.py loadshapefiles --reload --data-dir data/shapefiles/my-folder
 
-That's everything! If you have questions or issues, [open an issue on GitHub](https://github.com/opennorth/represent-boundaries/issues?state=open) or [contact us](mailto:represent@opennorth.ca).
+That's everything! If you have questions or issues, [open an issue on GitHub](https://github.com/opennorth/represent-boundaries/issues?state=open) or [contact us](mailto:represent@opennorth.ca). If you haven't yet, you may want to consult the <a href="{{ site.baseurl }}/docs/reference/">API reference</a>.
+
+**Want to use Represent Boundaries but don't have a developer on your team?** [Contact us](mailto:represent@opennorth.ca) about how we can help you implement Represent Boundaries.
