@@ -49,7 +49,7 @@ A leading `i` makes the search case-insensitive. For example, to find boundaries
 
 ### Debugging
 
-For a browsable, HTML version of the JSON response, add a `format=apibrowser` query parameter. Add `pretty=1` to just indent the raw JSON.
+For a browsable, HTML version of the JSON response, add a `format=apibrowser` query parameter. Add `pretty=1` to just indent the raw JSON. When using `format=apibrowser`, the `pretty` parameter and any JSONP parameter are ignored.
 
 ### Cross-domain requests
 
@@ -97,6 +97,8 @@ To see responses to these API requests, try them on [http://represent.opennorth.
 
         /boundaries/?name=Toronto
 
+While the `sets` query parameter can be used on any boundary endpoint, it only makes sense on the top-level endpoint.
+
 To see responses to these API requests, try them on [http://represent.opennorth.ca](http://represent.opennorth.ca/).
 
 ### Geospatial queries
@@ -113,6 +115,8 @@ To see responses to these API requests, try them on [http://represent.opennorth.
 
         /boundaries/?intersects=toronto-wards/etobicoke-north-1
 
+The `intersects` query parameter will always return the filtering boundary, since it intersects itself.
+
 To see responses to these API requests, try them on [http://represent.opennorth.ca](http://represent.opennorth.ca/).
 
 ### Drawing boundaries
@@ -120,6 +124,18 @@ To see responses to these API requests, try them on [http://represent.opennorth.
 The default geospatial output format is GeoJSON. Add a `format=kml` or `format=wkt` query parameter to get KML or Well-Known Text.
 
 The `simple_shape` endpoint simplifies the shape, looks fine and loads fast. Represent Boundaries uses a tolerance of `0.0002` by default to simplify the shape. You can change the tolerance by setting `BOUNDARIES_SIMPLE_SHAPE_TOLERANCE` in `my_project/settings.py`. If you change the tolerance, run `loadshapefiles` with the `--reload` switch.
+
+* Get all simple shapes
+
+        /boundaries/simple_shape
+
+* Get all original shapes
+
+        /boundaries/shape
+
+* Get all centroids
+
+        /boundaries/centroid
 
 * Get all simple shapes from a boundary set
 
@@ -144,5 +160,7 @@ The `simple_shape` endpoint simplifies the shape, looks fine and loads fast. Rep
 * Get one boundary's centroid
 
         /boundaries/toronto-wards/etobicoke-north-1/centroid
+
+The API will by default not return more than 350 geospatial results, to avoid slow queries. This limit can be configured by setting `BOUNDARIES_MAX_GEO_LIST_RESULTS` in `my_project/settings.py`.
 
 To see responses to these API requests, try them on [http://represent.opennorth.ca](http://represent.opennorth.ca/).
