@@ -7,7 +7,7 @@ Represent Boundaries is a Django app, which you can deploy on its own or integra
 
 ## Install dependencies
 
-Represent Boundaries requires Python 2.7, 3.3 or 3.4 and PostGIS. Follow GeoDjango's [instructions](https://docs.djangoproject.com/en/dev/ref/contrib/gis/install/), or use the quick-start guide for OS X users below.
+Represent Boundaries requires Python 2.6, 2.7, 3.3 or 3.4 and PostGIS. Follow GeoDjango's [instructions](https://docs.djangoproject.com/en/dev/ref/contrib/gis/install/), or use the quick-start guide for OS X users below.
 
 If you have issues installing dependencies, check GeoDjango's [help section](https://docs.djangoproject.com/en/dev/ref/contrib/gis/install/#troubleshooting).
 
