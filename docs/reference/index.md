@@ -73,7 +73,7 @@ A boundary set is a group of boundaries.
 
         /boundary-sets/?domain=Canada
 
-To see responses to these API requests, try them on [http://represent.opennorth.ca](http://represent.opennorth.ca/).
+To see responses to these API requests, try them on [https://represent.opennorth.ca/](https://represent.opennorth.ca/).
 
 <h2 id="boundaries">Boundaries</h2>
 
@@ -99,7 +99,7 @@ To see responses to these API requests, try them on [http://represent.opennorth.
 
 While the `sets` query parameter can be used on any boundary endpoint, it only makes sense on the top-level endpoint.
 
-To see responses to these API requests, try them on [http://represent.opennorth.ca](http://represent.opennorth.ca/).
+To see responses to these API requests, try them on [https://represent.opennorth.ca/](https://represent.opennorth.ca/).
 
 ### Geospatial queries
 
@@ -117,7 +117,7 @@ To see responses to these API requests, try them on [http://represent.opennorth.
 
 The `intersects` query parameter will always return the filtering boundary, since it intersects itself.
 
-To see responses to these API requests, try them on [http://represent.opennorth.ca](http://represent.opennorth.ca/).
+To see responses to these API requests, try them on [https://represent.opennorth.ca/](https://represent.opennorth.ca/).
 
 ### Drawing boundaries
 
@@ -163,4 +163,4 @@ The `simple_shape` endpoint simplifies the shape, looks fine and loads fast. Rep
 
 The API will by default not return more than 350 geospatial results, to avoid slow queries. This limit can be configured by setting `BOUNDARIES_MAX_GEO_LIST_RESULTS` in `my_project/settings.py`.
 
-To see responses to these API requests, try them on [http://represent.opennorth.ca](http://represent.opennorth.ca/).
+To see responses to these API requests, try them on [https://represent.opennorth.ca/](https://represent.opennorth.ca/).
