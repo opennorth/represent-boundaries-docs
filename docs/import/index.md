@@ -3,13 +3,13 @@ layout: inner-page
 title: Add data to the API
 ---
 
-Represent Boundaries loads geospatial data in the [shapefile](http://en.wikipedia.org/wiki/Shapefile) format. Other formats like KML and GeoJSON can be converted to shapefile using tools like [ogr2ogr](http://www.gdal.org/ogr2ogr.html). Before using Represent Boundaries, collect the geospatial data that you need. For example, collect Canada's <a href="http://data.gc.ca/data/en/dataset/48f10fb9-78a2-43a9-92ab-354c28d30674">federal electoral districts</a>:
+Represent Boundaries loads geospatial data in the [shapefile](https://en.wikipedia.org/wiki/Shapefile) format. Other formats like KML and GeoJSON can be converted to shapefile using tools like [ogr2ogr](http://www.gdal.org/ogr2ogr.html). Before using Represent Boundaries, collect the geospatial data that you need. For example, collect Canada's <a href="http://open.canada.ca/data/en/dataset/48f10fb9-78a2-43a9-92ab-354c28d30674">federal electoral districts</a>:
 
 ```bash
-curl -O http://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/files-fichiers/gfed000a11a_e.zip
+curl -O https://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/files-fichiers/gfed000a11a_e.zip
 ```
 
-You've got your shapefiles? Next, write **definition files** that describe how to load shapefiles into the API. When a shapefile is loaded, a **boundary set** is created for the shapefile and a **boundary** is created for each polygon feature in the shapefile. See the [sample definition file](http://github.com/opennorth/represent-boundaries/blob/master/definition.example.py) to learn how to control how shapefiles are loaded. Most parameters in a definition file are optional. Here's a minimal definition file for Canada's federal electoral districts:
+You've got your shapefiles? Next, write **definition files** that describe how to load shapefiles into the API. When a shapefile is loaded, a **boundary set** is created for the shapefile and a **boundary** is created for each polygon feature in the shapefile. See the [sample definition file](https://github.com/opennorth/represent-boundaries/blob/master/definition.example.py) to learn how to control how shapefiles are loaded. Most parameters in a definition file are optional. Here's a minimal definition file for Canada's federal electoral districts:
 
 ```python
 from datetime import date
