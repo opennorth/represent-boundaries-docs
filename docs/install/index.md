@@ -62,10 +62,10 @@ This guide assumes you are using Homebrew as your package manager. If you use Ma
 
 1. In `my_project/urls.py`, add this line to the end of the `urlpatterns` list:
 
-        (r'', include('boundaries.urls')),
+        url('', include('boundaries.urls')),
 
 1. From your project's directory, run:
 
-        python manage.py syncdb --noinput
+        python manage.py migrate
 
 You can now run `python manage.py runserver` and navigate to [http://127.0.0.1:8000/boundary-sets/](http://127.0.0.1:8000/boundary-sets/) to see your empty API. <a href="{{ site.baseurl }}/docs/import/">Let's add some data!</a>
