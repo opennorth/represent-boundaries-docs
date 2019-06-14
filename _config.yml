@@ -1,5 +1,5 @@
 name: represent.poplus.org
-baseurl:
+baseurl: /represent.poplus.org/
 title: Represent
 description: "Represent Boundaries is an open-source web API to geographic boundaries (i.e. countries, electoral districts, administrative areas) loaded from shapefiles. Render maps and easily query which boundaries cover your user's location."
 repository_url: https://github.com/opennorth/represent-boundaries/
