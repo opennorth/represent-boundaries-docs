@@ -1,12 +1,3 @@
-.site-title {
-  margin-left: 0;
-}
-@media (min-width: 33.75em) {
-  .site-title {
-    margin-left: 0;
-  }
-}
-
 pre code {
   white-space: pre;
 }
@@ -107,11 +98,18 @@ pre code {
   }
 }
 
-.final-call-to-action{
+.final-call-to-action {
   .button--primary {
     font-size: 1.5em;
   }
   p {
     margin-top: 1em;
+  }
+}
+
+.site-title {
+  margin-left: 0;
+  @media (min-width: $medium-screen) {
+    margin-left: 0;
   }
 }
