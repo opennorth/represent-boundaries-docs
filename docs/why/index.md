@@ -3,7 +3,7 @@ layout: inner-page
 title: When to use Represent Boundaries
 ---
 
-Represent Boundaries has many features in common with [MapIt](http://mapit.poplus.org/), another Poplus component. If you're having trouble choosing between Represent Boundaries and MapIt, here are Represent Boundaries' advantages:
+Represent Boundaries has many features in common with [MapIt](https://mapit.mysociety.org/). If you're having trouble choosing between Represent Boundaries and MapIt, here are Represent Boundaries' advantages:
 
 * Represent Boundaries' <a href="{{ site.baseurl }}/docs/import/">definition files</a> give you fine-grained control over how data is loaded into the API, in particular how boundaries are named and identified, without having to write [custom import scripts](https://github.com/mysociety/mapit/tree/master/mapit/management/commands) like in MapIt. If you often need to correct or transform the data in shapefiles, Represent Boundaries is the better choice.
 * Represent Boundaries uses **boundary sets** to organize boundaries and to publish metadata, like the data's provenance. MapIt lacks boundary sets, so it can't publish metadata for a boundary set. However, it can still organize boundaries, using area types and boundary hierarchies: for example, [all London wards](http://mapit.mysociety.org/areas/LBW) have the type <abbr title="London borough ward">LBW</abbr>.

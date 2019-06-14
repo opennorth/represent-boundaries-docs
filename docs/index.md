@@ -17,4 +17,4 @@ Represent Boundaries is a web API to geographic areas, like electoral districts.
 
 It's a Django app that's easy to integrate into an existing project or to deploy on its own. It uses a simple file format to control how data is loaded into the API, and it provides a command-line tool to easily manage data.
 
-Not sure whether to use Represent Boundaries or [MapIt](http://mapit.poplus.org/)? <a href="{{ site.baseurl }}/docs/why/">Read our advice</a> to help you decide.
+Not sure whether to use Represent Boundaries or [MapIt](https://mapit.mysociety.org/)? <a href="{{ site.baseurl }}/docs/why/">Read our advice</a> to help you decide.
